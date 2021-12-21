@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e5e5e5 !important;
+}
+
+.gallery img {
+  height: 432px !important;
+}
+/* .circle-wrapper {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  position: absolute;
+  bottom: 270px;
+  right: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle-image {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: white;
+  border: black;
+} */
+
+.splide__arrow--prev {
+  background: rgba(255, 255, 255, 0.45) !important;
+  left: -8em;
+  width: 138px;
+  height: 138px;
+}
+.splide__arrow--next {
+  background: rgba(255, 255, 255, 0.45) !important;
+  right: -4em;
+  width: 138px;
+  height: 138px;
+}
+
+.splide__arrow svg {
+  fill: #267171;
+  height: 3em;
+  width: 3em;
+}
+
+.splide__pagination li {
+  width: 16px;
+  margin: 5px;
+  position: relative;
+  top: 3em;
+}
+.splide__pagination__page {
+  background-color: rgb(110, 110, 110) !important;
+}
+
+.splide__pagination__page.is-active {
+  background: #267171 !important;
+}
+
+.w-full .bg-white {
+  box-shadow: 15px 10px 20px 2px rgba(0, 0, 0, 0.2);
+}

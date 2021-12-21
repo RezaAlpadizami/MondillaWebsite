@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Mondilla Design</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.svg" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <!-- style.css -->
+
+    <!-- or link to the CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="antialiased">
+    <!-- Navigation -->
+    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
+          <a href="#">
+            <img src="logo.svg" alt="logo" class="rounded-full shadow-3xl" />
+          </a>
+          <button
+            class="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center justify-center hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-400" href="#">
+                <span class="ml-2 hover:text-primary-color">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-400" href="#">
+                <span class="ml-2 hover:text-primary-color">Gallery</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-400" href="#">
+                <span class="ml-2 hover:text-primary-color">Project</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-400" href="#">
+                <span class="ml-2 hover:text-primary-color">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Splash Page -->
+    <section class="pb-20">
+      <!-- Section Container -->
+      <div class="mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-6/12 ml-0 mr-auto">
+            <!-- Image -->
+            <img alt="unsplash-img" class="max-w-full rounded-lg shadow-lg" src="unsplash_OtXADkUh3-I.png" data-aos="fade-right" data-aos-delay="500" />
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 mr-auto px-4">
+            <div class="">
+              <div class="text-left items-center justify-center mb-6 text-5xl font-bold" data-aos="fade-up">
+                <!-- Icon -->
+                <h1 class="text-primary-color">Mondilla Design</h1>
+                <h2 class="text-gray-500 my-2">Ready To Build</h2>
+                <h2 class="text-gray-500">Your Dream Home</h2>
+              </div>
+              <!-- Text Box -->
+              <p class="mt-12 text-lg leading-relaxed text-gray-600 w-3/4" data-aos="fade-up" data-aos-delay="500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur aperiam dolore aliquid quod omnis veniam corrupti rem expedita? Sint aut dolores excepturi cupiditate distinctio nemo a sunt perspiciatis.
+                Facere.
+              </p>
+              <!-- Button -->
+              <div class="wrapper-button mt-16" data-aos="fade-up" data-aos-delay="700">
+                <button class="bg-primary-color text-white active:bg-green-900 text-sm font-bold px-6 py-3 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-3 mb-1" type="button" style="transition: all 0.15s ease 0s">
+                  Get Started
+                </button>
+                <button
+                  class="bg-transparent text-primary-color active:bg-white text-sm font-bold px-8 py-3 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                  type="button"
+                  style="transition: all 0.15s ease 0s; border: 1px solid #1b6d80"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-20" data-aos="fade-left" data-aos-delay="500">
+        <img src="unsplash_hrMav18bnsc.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="pb-20 mt-24">
+      <!-- 3 Card Section -->
+      <div class="mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-bold text-primary-color" data-aos="zoom-in">We Are Professional</h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center flex justify-center" id="card1" data-aos="fade-right" data-aos-delay="500">
+            <div class="relative flex flex-col justify-center min-w-0 w-80 h-80 break-words bg-white w-2/4 mb-8 shadow-lg rounded-lg hover:scale-125">
+              <div class="h-full">
+                <img src="unsplash__HqHX3LBN18.png" alt="image-card" class="h-full w-full rounded-lg" />
+                <blockquote class="relative mb-4">
+                  <!-- Text Box -->
+                  <h4 class="text-xl font-bold text-primary-color mt-2">Colour Consluting</h4>
+                  <p class="text-md font-light mt-2 text-black">I feel like I've mentioned before that I'm a robot and that continues to be true, even to this day.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center flex justify-center" id="card2" data-aos="fade-up" data-aos-delay="700">
+            <div class="relative flex flex-col min-w-0 w-80 h-80 break-words bg-white w-2/4 mb-8 shadow-lg rounded-lg hover:scale-125">
+              <div class="h-full">
+                <img src="unsplash_Ry9WBo3qmoc.png" alt="image-card" class="h-full w-full rounded-lg" />
+                <blockquote class="relative mb-4">
+                  <!-- Text Box -->
+                  <h4 class="text-xl font-bold text-primary-color mt-2">Crown Molding</h4>
+                  <p class="text-md font-light mt-2 text-black">I feel like I've mentioned before that I'm a robot and that continues to be true, even to this day.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center flex justify-center" id="card3" data-aos="fade-left" data-aos-delay="900">
+            <div class="relative flex flex-col w-80 h-80 break-words bg-white w-2/4 mb-8 shadow-lg rounded-lg hover:scale-125">
+              <div class="h-full">
+                <img src="unsplash_YqFz7UMm8qE.png" alt="image-card" class="h-full w-full rounded-lg" />
+                <blockquote class="relative mb-4">
+                  <!-- Text Box -->
+                  <h4 class="text-xl font-bold text-primary-color mt-2">Light Carpentry</h4>
+                  <p class="text-md font-light mt-2 text-black">I feel like I've mentioned before that I'm a robot and that continues to be true, even to this day.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text Box and Card Container -->
+    <section class="first-content">
+      <div class="">
+        <div class="flex flex-wrap justify-center text-center mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-bold text-primary-color" data-aos="zoom-in">We Know What You Need</h2>
+          </div>
+        </div>
+        <div class="items-center flex flex-wrap mt-32">
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-7/12 px-4 mr-0 ml-0">
+            <div class="relative min-w-0 break-words mb-6">
+              <!-- Image -->
+              <img alt="unsplash-img" src="unsplash_4_jQL4JCS98.png" class="w-full h-full" data-aos="zoom-in-right" />
+              <!-- <div class="circle-wrapper">
+                <div id="circle-image"></div>
+              </div>
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span> -->
+            </div>
+          </div>
+          <!-- Text Box Container -->
+          <div class="w-full md:w-4/12 px-4 mr-auto" data-aos="zoom-in-left">
+            <!-- Text Box -->
+            <h3 class="text-4xl mb-2 font-bold leading-normal text-primary-color">Dinning Room</h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-12 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolores? Saepe aspernatur necessitatibus explicabo.</p>
+
+            <a href="https://www.creative-tim.com/framework/tailwind-starter-kit" class="font-semibold text-primary-color">Learn More <i class="fas fa-arrow-right" style="font-size: 12px"></i> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Services Section -->
+
+    <!-- About Section -->
+    <section class="py-20">
+      <!-- Section Container -->
+      <div class="mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12 ml-12" data-aos="zoom-in-right">
+              <h3 class="text-4xl mb-2 font-bold leading-normal text-primary-color">Soft Color</h3>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-12 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolores? Saepe aspernatur necessitatibus explicabo.</p>
+
+              <a href="https://www.creative-tim.com/framework/tailwind-starter-kit" class="font-semibold text-primary-color">Learn More <i class="fas fa-arrow-right" style="font-size: 12px"></i></a>
+            </div>
+            <div class="mt-24">
+              <img src="unsplash_UwooAVFu6SI.png" class="max-w-full" alt="" data-aos="zoom-out-right" />
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <!-- Image -->
+            <img alt="unsplash-img" class="max-w-full" src="unsplash_JaXs8Tk5Iww.png" data-aos="zoom-out-left" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Gallery Section -->
+    <section class="pt-20 pb-48">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 gallery-wrapper">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-bold text-teal-700" data-aos="zoom-in">Our Client Gallery</h2>
+          </div>
+        </div>
+
+        <div id="image-slider" class="splide" data-aos="zoom-in">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="flex flex-wrap">
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4" data-aos="zoom-right" data-aos-delay="900">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-start">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bali</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4" data-aos="zoom-right" data-aos-delay="700">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1585128792020-803d29415281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bandung</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 xl:w-12/12 px-4 py-4" data-aos="zoom-right" data-aos-delay="500">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Jakarta</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-wrap">
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-start">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bali</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1585128792020-803d29415281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bandung</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 xl:w-12/12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Jakarta</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-wrap">
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-start">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bali</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1585128792020-803d29415281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Bandung</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item -->
+                  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 xl:w-12/12 px-4 py-4">
+                    <div class="bg-white py-5 rounded-lg" style="width: 400px">
+                      <!-- Image -->
+                      <img
+                        alt="photoprofile"
+                        src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                        class="shadow-lg max-w-screen-2xl text-center mx-auto"
+                        style="height: 432px; width: 358px"
+                      />
+                      <div class="flex flex-row pt-6 justify-left">
+                        <div class="pr-4 icon-gallery flex flex-col justify-center ml-4 pl-2">
+                          <i class="fas fa-map-marker-alt text-teal-700 text-4xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <h5 class="text-xl font-bold">Jakarta</h5>
+                          <p class="mt-1 text-sm text-gray-500 font-semibold">Modern design, clean interior type</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+      </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Contact Section -->
+    <section class="pb-20 relative block bg-primary-color">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0)">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-primary-color fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <!-- Text Box -->
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">Build something</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae itaque blanditiis magni consequatur qui quo? Quas</p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Excelent Services</h5>
+            <p class="mt-2 mb-4 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente dolore, est minima adipisci dolorum</p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Build Up your room</h5>
+            <p class="mt-2 mb-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti iure nesciunt amet non.</p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+            <p class="mt-2 mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit excepturi ipsum cum reprehenderit iste nobis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="relative block py-24 lg:pt-0 bg-primary-color">
+      <!-- Container -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">Complete this form and we will get back to you in 24 hours.</p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name"> Full Name </label
+                  ><input type="text" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Full Name" style="transition: all 0.15s ease 0s" />
+                </div>
+                <!-- Email -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email"> Email </label
+                  ><input type="email" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Email" style="transition: all 0.15s ease 0s" />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message"> Message </label
+                  ><textarea rows="4" cols="80" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button class="bg-primary-color text-white active:bg-green-900 text-sm font-bold px-6 py-3 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-3 mb-1" type="button" style="transition: all 0.15s ease 0s">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0)">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box Container -->
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">Find us on any of these platforms, we respond 1-2 business days.</h5>
+            <!-- Social Media Buttons -->
+            <div class="mt-6">
+              <a href="#" target="_blank"
+                ><i class="fab fa-twitter bg-primary-color text-white shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fab fa-facebook-square bg-primary-color text-white shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fab fa-instagram bg-primary-color text-white shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i
+              ></a>
+            </div>
+          </div>
+          <!-- List Container -->
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <!-- List 1 -->
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation">About Us</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial">Mondilla Apps</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- List 2 -->
+              <div class="w-full lg:w-4/12 px-4">
+                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Line Break -->
+        <hr class="my-6 border-gray-400" />
+        <!-- Footer Text -->
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2021 Mondilla Web by
+              <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Japmaf</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          speed: 1000,
+          rewind: true,
+        }).mount();
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- <script src="js/wow.min.js"></script> -->
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  </script>
+  <!-- Navigation Script -->
+</html>
